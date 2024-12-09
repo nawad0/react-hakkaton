@@ -1,0 +1,8 @@
+services:
+  node:
+    build: ./node/
+    container_name: ${COMPOSE_PROJECT_NAME}-node
+
+networks:
+  network:
+    driver: bridge

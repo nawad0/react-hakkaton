@@ -1,0 +1,10 @@
+services:
+  node:
+    ports:
+      - "3000:3000"
+    networks:
+      - network
+    volumes:
+      - ../app:/app
+    command: >
+      sh -c "yarn install && yarn start"
